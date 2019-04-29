@@ -3,7 +3,8 @@
 
 const cluster = require('cluster');
 const http = require('http');
-const numCPUs = require('os').cpus().length;
+var numCPUs = require('os').cpus().length;
+numCPUs = 1
 // console.log(numCPUs)
 
 console.log(`pid: ${process.pid} is running - isMaster: ${cluster.isMaster}`);
